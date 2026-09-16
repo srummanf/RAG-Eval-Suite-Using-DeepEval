@@ -141,14 +141,6 @@ flowchart TD
     RR --> P["src/rag_pipeline.py"]
     G["src/generator.py"] --> P
     P --> UI["src/app.py<br/>Streamlit UI"]
-  
-    style D fill:#e1f5ff
-    style R fill:#fff3e0
-    style C fill:#f3e5f5
-    style RR fill:#fff3e0
-    style P fill:#e8f5e9
-    style G fill:#fff3e0
-    style UI fill:#fce4ec
 ```
 
 **Data Flow:**
@@ -166,14 +158,6 @@ flowchart TD
     Registry["evals/metric_registry.py"] --> Suite
     Registry --> Compare
     Compare --> Decide["Decision & Rollout"]
-  
-    style Gold fill:#ffebee
-    style E fill:#f1f8e9
-    style Suite fill:#e0f2f1
-    style Snap fill:#ede7f6
-    style Compare fill:#e0f2f1
-    style Registry fill:#fff9c4
-    style Decide fill:#f3e5f5
 ```
 
 **Testing Path:**
@@ -1282,9 +1266,7 @@ graph TB
     C -->|Faithfulness| A
     Q -->|Contextual Relevancy| C
   
-    style Q fill:#bbdefb
-    style C fill:#c8e6c9
-    style A fill:#ffe0b2
+   
 ```
 
 #### Metrics:
@@ -1695,11 +1677,6 @@ graph LR
     OPS --> L
     OPS --> C
     OPS --> R
-  
-    style OPS fill:#fff9c4
-    style L fill:#ffccbc
-    style C fill:#c5e1a5
-    style R fill:#b3e5fc
 ```
 
 #### 1. Latency Evaluation (`evals/eval_latency.py`)
@@ -2380,13 +2357,6 @@ flowchart LR
     H --> A
     G --> I["Promote candidate<br/>to baseline"]
   
-    style A fill:#ffccbc
-    style B fill:#c5e1a5
-    style C fill:#b3e5fc
-    style D fill:#f8bbd0
-    style F fill:#fff9c4
-    style G fill:#c8e6c9
-    style I fill:#d1c4e9
 ```
 
 ---
